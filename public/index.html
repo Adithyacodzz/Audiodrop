@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Video to Audio Converter — AudioDrop</title>
+<meta name="description" content="Free, fast and secure video to audio converter. Convert videos to MP3, M4A, WAV or OGG online. No account required.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="card">
+<div class="brand">AUDIO<span>DROP</span></div>
+<h1>Video to Audio Converter</h1>
+<p class="tagline">Free, Fast &amp; Secure Video to Audio Converter</p>
+<p class="sub">Convert your video into high-quality audio quickly and easily. Choose a format, extract the sound, and download it.</p>
+
+<label class="drop" id="drop">
+<input id="file" type="file" accept="video/*">
+<div class="icon">↑</div>
+<strong id="name">Choose a video</strong>
+<small>or drag &amp; drop it here</small>
+</label>
+
+<div class="row">
+<span>Audio format</span>
+<select id="format">
+<option value="mp3">MP3</option>
+<option value="m4a">M4A</option>
+<option value="wav">WAV</option>
+<option value="ogg">OGG</option>
+</select>
+</div>
+
+<button id="convert" disabled>Extract Audio</button>
+<div class="status" id="status">Ready.</div>
+<p class="privacy">Your uploaded video is deleted after conversion.</p>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
